@@ -17,10 +17,12 @@
         <button type="submit">Enviar</button>
 
     </form>
-<!-- Linha horizontal -->
+
+    <!-- Linha horizontal -->
     <hr>
-  
-     // $_SERVER é uma variável superglobal do PHP que contém informações sobre requisições feitas pelo servidor. Aqui ele esta confirmando se a requisição é via POST (Protocolo HTTP)
+
+    <?php
+    // $_SERVER é uma variável superglobal do PHP que contém informações sobre requisições feitas pelo servidor. Aqui ele esta confirmando se a requisição é via POST (Protocolo HTTP)
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Se sim ele acessa as informações (Nome e idade)
         $nome = $_POST["nome"];
